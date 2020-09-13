@@ -1,0 +1,80 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for FSM Behavior.",
+	"text": {
+		"behaviors": {
+			"aaxe_fsm": {
+				"name": "FSM",
+				"description": "Finite State Machine Behavior",
+				"help-url": "https://www.construct.net",
+				"properties": {
+					"active": {
+						"name": "Active",
+						"desc": "Enable the state machine."
+					},
+					"start-state": {
+						"name": "Start State",
+						"desc": "The Initial State."
+					}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"on-enter": {
+						"list-name": "On enter state",
+						"display-text": "On {my} enter to [b]{0}[/b]",
+						"description": "Triggered when enter state.",
+						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					},
+					"on-exit": {
+						"list-name": "On exit state",
+						"display-text": "On {my} exit from [b]{0}[/b]",
+						"description": "Triggered when exit state.",
+						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					},
+					"on-state-changed": {
+						"list-name": "On state changed",
+						"display-text": "On {my} state changed",
+						"description": "Triggered when state changed. Useful when debugging."
+					},
+					"compare-current-state": {
+						"list-name": "Compare current state",
+						"display-text": "{my} Current state = [b]{0}[/b]",
+						"description": "Compare current state.",
+						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					},
+					"compare-previous-state": {
+						"list-name": "Compare previous state",
+						"display-text": "Previous state = [b]{0}[/b]",
+						"description": "Compare previous state.",
+						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					}
+				},
+				"actions": {
+					"goto-state": {
+						"list-name": "Go to state",
+						"display-text": "{my} go to state [b]{0}[/b]",
+						"description": "Assign next state.",
+						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					},
+					"set-activated": {
+						"list-name": "Set activated",
+						"display-text": "{my} set activated to [b]{0}[/b]",
+						"description": "Enable the object's fsm behavior.",
+						"params": {"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}}
+					}
+				},
+				"expressions": {
+					"current-state": {
+						"description": "Get current state.",
+						"translated-name": "CurrentState"
+					},
+					"previous-state": {
+						"description": "Get previous state.",
+						"translated-name": "PreviousState"
+					}
+				}
+			}
+		}
+	}
+}

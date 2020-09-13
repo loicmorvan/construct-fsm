@@ -1,0 +1,59 @@
+﻿{
+	"": {
+		"conditions": [
+			{
+				"id": "on-enter",
+				"scriptName": "OnEnter",
+				"isTrigger": "true",
+				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]
+			},
+			{
+				"id": "on-exit",
+				"scriptName": "OnExit",
+				"isTrigger": "true",
+				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]
+			},
+			{
+				"id": "on-state-changed",
+				"scriptName": "OnStateChanged",
+				"isTrigger": "true"			
+			},
+			{
+				"id": "compare-current-state",
+				"scriptName": "IsCurState",
+				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]
+			},
+			{
+				"id": "compare-previous-state",
+				"scriptName": "IsPreState",
+				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]
+			}
+		],
+		"actions": [
+			{
+				"id": "goto-state",
+				"scriptName": "GoToState",
+				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]			
+			},
+			{
+				"id": "set-activated",
+				"scriptName": "SetActivated",
+				"params": [{"id":"activated2", "type":"combo", "items":["no","yes"]}]				
+			}	
+		],
+		"expressions": [
+			{
+				"id": "current-state",
+				"expressionName": "CurrentState",
+				"scriptName": "CurState",
+				"returnType": "string"		
+			},
+			{
+				"id": "previous-state",
+				"expressionName": "PreviousState",
+				"scriptName": "PreState",
+				"returnType": "string"		
+			}
+		]
+	}
+}
