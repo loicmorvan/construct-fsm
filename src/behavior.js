@@ -26,7 +26,7 @@
 			this._info.SetDescription(lang(".description"));
 			this._info.SetVersion(BEHAVIOR_VERSION);
 			this._info.SetCategory(BEHAVIOR_CATEGORY);
-			this._info.SetAuthor("aaXe");
+			this._info.SetAuthor("Loïc Morvan, piranha305");
 			this._info.SetHelpUrl(lang(".help-url"));
 			this._info.SetIsOnlyOneAllowed(false);
 			
