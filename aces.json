@@ -39,7 +39,16 @@
 				"id": "set-activated",
 				"scriptName": "SetActivated",
 				"params": [{"id":"activated2", "type":"combo", "items":["no","yes"]}]				
-			}	
+			},
+			{
+				"id": "add-transition",
+				"scriptName": "AddTransition",
+				"params": [
+					{ "id": "transitionName", "type": "string", "initialValue": "\"\"" },
+					{ "id": "fromState", "type": "string", "initialValue": "\"\"" },
+					{ "id": "toState", "type": "string", "initialValue": "\"\"" }
+				]
+			}
 		],
 		"expressions": [
 			{

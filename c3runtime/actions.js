@@ -18,6 +18,10 @@
 			this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnStateChanged);
 			this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnEnter);
 			this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnExit);
+		},
+
+		AddTransition(transitionName, fromState, toState) {
+			// TODO
 		}
 	};
 }
