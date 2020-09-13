@@ -72,6 +72,12 @@
 							"fromState": { "name": "From state", "desc": "The name of the source state" },
 							"toState": { "name": "To state", "desc": "The name of the target state" }
 						}
+					},
+					"transition": {
+						"list-name": "Transition",
+						"display-text": "Transition [b]{0}[/b]",
+						"description": "Apply the transition to the state machine, switching from the source state to the target one",
+						"params": { "transitionName": { "name": "Name", "desc": "Transition name" } }
 					}
 				},
 				"expressions": {

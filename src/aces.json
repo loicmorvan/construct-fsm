@@ -48,6 +48,11 @@
 					{ "id": "fromState", "type": "string", "initialValue": "\"\"" },
 					{ "id": "toState", "type": "string", "initialValue": "\"\"" }
 				]
+			},
+			{
+				"id": "transition",
+				"scriptName": "Transition",
+				"params": [ { "id": "transitionName", "type": "string", "initialValue": "\"\"" } ]
 			}
 		],
 		"expressions": [

@@ -30,6 +30,22 @@
 			}
 			
 			this.transitions[fromState][transitionName] = toState;
+		},
+
+		Transition(transitionName) {
+			if (this.transitions != null &&
+				this.transitions[this.currentState] != undefined) {
+					var toState = this.transitions[this.currentState][transitionName];
+
+					if (toState != undefined) {
+						this.previousState = this.currentState;
+						this.currentState = toState;
+
+						this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnStateChanged);
+						this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnEnter);
+						this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnExit);
+					}
+			}
 		}
 	};
 }
