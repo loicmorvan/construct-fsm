@@ -21,7 +21,15 @@
 		},
 
 		AddTransition(transitionName, fromState, toState) {
-			// TODO
+			if (this.transitions == null) {
+			 this.transitions = [];
+			}
+
+			if (this.transitions[fromState] == undefined) {
+			 this.transitions[fromState] = [];
+			}
+			
+			this.transitions[fromState][transitionName] = toState;
 		}
 	};
 }
