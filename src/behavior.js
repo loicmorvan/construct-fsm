@@ -12,7 +12,7 @@
 	const BEHAVIOR_ID = "aaXe_FSM";
 	////////////////////////////////////////////
 	
-	const BEHAVIOR_VERSION = "1.2.0.0";
+	const BEHAVIOR_VERSION = "1.3.0.0";
 	const BEHAVIOR_CATEGORY = "general";
 	
 	const BEHAVIOR_CLASS = SDK.Behaviors.aaXe_FSM = class FSMBehavior extends SDK.IBehaviorBase

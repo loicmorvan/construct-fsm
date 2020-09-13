@@ -9,6 +9,10 @@
 
 		PreviousState(){
 			return this.previousState;
+		},
+
+		LastTransition() {
+			return this.lastTransition;
 		}
 	};
 }

@@ -34,6 +34,10 @@ cmp value list
 
 		IsPreState(name){
 			return C3.compare(this.previousState, 0, name);
+		},
+
+		IsLastTransition(name) {
+			return C3.compare(this.lastTransition, 0, name);
 		}
 	};
 }

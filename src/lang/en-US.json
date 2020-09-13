@@ -48,6 +48,12 @@
 						"display-text": "Previous state = [b]{0}[/b]",
 						"description": "Compare previous state.",
 						"params": {"name0": { "name":"Name", "desc":"State name"}}
+					},
+					"compare-last-transition": {
+						"list-name": "Compare last transition",
+						"display-text": "Last transition = [b]{0}[/b]",
+						"description": "Compare last transition.",
+						"params": {"name0": { "name":"Name", "desc":"Transition name"}}
 					}
 				},
 				"actions": {
@@ -88,6 +94,10 @@
 					"previous-state": {
 						"description": "Get previous state.",
 						"translated-name": "PreviousState"
+					},
+					"last-transition": {
+						"description": "Get last transition.",
+						"translated-name": "LastTransition"
 					}
 				}
 			}

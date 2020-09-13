@@ -27,6 +27,11 @@
 				"id": "compare-previous-state",
 				"scriptName": "IsPreState",
 				"params": [{"id":"name0", "type":"string", "initialValue":"\"\""}]
+			},
+			{
+				"id": "compare-last-transition",
+				"scriptName": "IsLastTransition",
+				"params": [ {"id":"name0", "type":"string", "initialValue":"\"\""} ]
 			}
 		],
 		"actions": [
@@ -67,6 +72,12 @@
 				"expressionName": "PreviousState",
 				"scriptName": "PreState",
 				"returnType": "string"		
+			},
+			{
+				"id": "last-transition",
+				"expressionName": "LastTransition",
+				"scriptName": "LastTransition",
+				"returnType": "string"
 			}
 		]
 	}

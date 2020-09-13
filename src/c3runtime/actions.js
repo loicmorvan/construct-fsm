@@ -12,6 +12,7 @@
 			if(!this.activated) return;
 			if(state == null) return;
 
+			this.lastTransition = "";
 			this.previousState = this.currentState;
 			this.currentState = state;
 
@@ -38,6 +39,7 @@
 					var toState = this.transitions[this.currentState][transitionName];
 
 					if (toState != undefined) {
+						this.lastTransition = transitionName;
 						this.previousState = this.currentState;
 						this.currentState = toState;
 

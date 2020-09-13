@@ -19,6 +19,7 @@
 
 			this.currentState = this.startState;
 			this.previousState = this.startState;
+			this.lastTransition = "";
 			
 			//this.Trigger(C3.Behaviors.aaXe_FSM.Cnds.OnEnter);
 		}
@@ -33,7 +34,8 @@
 			return {
 				"activated" : this.activated,
 				"previousState" : this.previousState,
-				"currentState" : this.currentState
+				"currentState" : this.currentState,
+				"lastTransition": this.lastTransition
 			};
 		}
 
@@ -42,6 +44,7 @@
 			this.activated = o["activated"];
 			this.previousState = o["previousState"];
 			this.currentState = o["currentState"];
+			this.lastTransition = o["lastTransition"];
 		}
 	};
 }
